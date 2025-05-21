@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeksisSMP - Minecraft Server</title>
+    <style>
+        body {
+            background: #222;
+            color: #f3f3f3;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            background: url('bild.jpg') center center/cover no-repeat;
+            /* Replace with your Minecraft image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(34,34,34,0.65);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+        }
+        .banner-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 12px #000a;
+        }
+        .banner-content p {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            text-shadow: 0 2px 8px #000a;
+        }
+        .apply-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.9rem 2.2rem;
+            background: #22942f;
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #0006;
+            transition: background 0.2s;
+        }
+        .apply-btn:hover {
+            background: #27ae38;
+        }
+        header {
+            display: none; /* Hide old header */
+        }
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #292929;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0006;
+        }
+        .server-ip {
+            background: #444;
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        footer {
+            text-align: center;
+            color: #aaa;
+            margin: 2rem 0 1rem 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>SeksisSMP</h1>
+            <p>En svensk Minecraft SMP-server för alla!</p>
+            <a href="#ansok" class="apply-btn">Du måste ansöka för att gå med!</a>
+        </div>
+    </div>
+    <main>
+        <h2 id="ansok">Om servern</h2>
+        <p>
+            SeksisSMP är en vänlig och aktiv Minecraft SMP-server där du kan spela, bygga och ha kul med andra spelare. Vi har en trevlig community och regelbundna event!
+        </p>
+        <div class="server-ip">
+            <strong><a href="#ansok" style="color: #fff; text-decoration: none;">Ansök här för att gå med!</a></strong>
+        </div>
+        <div style="text-align:center;margin:2rem 0;">
+            <a href="http://discord.seskis.space/" target="_blank" style="background:#5865F2;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:bold;">Gå med i Discord</a>
+        </div>
+        <h2>Hur går jag med?</h2>
+        <ol>
+            <li><strong>Du måste ansöka för att bli whitelistad!</strong></li>
+            <li>Starta Minecraft (Java Edition rekommenderas).</li>
+            <li>Gå till "Multiplayer" och klicka på "Add Server".</li>
+            <li>Skriv in serverns IP och anslut!</li>
+        </ol>
+        <h2>Regler</h2>
+        <ul>
+            <li>Visa respekt mot andra spelare.</li>
+            <li>Inget fusk eller hacks.</li>
+            <li>Ingen griefing eller stöld.</li>
+            <li>Ha kul!</li>
+        </ul>
+
+        <h2>Vanliga frågor</h2>
+        <details>
+            <summary>Hur lång tid tar det att bli whitelistad?</summary>
+            <div>Oftast inom 24 timmar. Håll utkik på Discord!</div>
+        </details>
+        <details>
+            <summary>Får jag bjuda in kompisar?</summary>
+            <div>Ja, men de måste också ansöka och bli godkända.</div>
+        </details>
+
+        <!-- DROPDOWN VOICECHAT INFO -->
+        <details style="margin-top:2rem;">
+            <summary style="font-size:1.2rem;cursor:pointer;font-weight:bold;">Hur använder jag proximity chat (röstchatt) på servern?</summary>
+            <div style="background:#23272a;padding:1.2em 1.5em;border-radius:8px;margin-top:1em;line-height:1.7;">
+                <b>Steg 1: Installera Forge eller Fabric</b><br>
+                Forge: <a href="https://files.minecraftforge.net/" target="_blank" rel="noopener">https://files.minecraftforge.net/</a><br>
+                Fabric: <a href="https://fabricmc.net/use/" target="_blank" rel="noopener">https://fabricmc.net/use/</a> + <a href="https://modrinth.com/mod/fabric-api" target="_blank" rel="noopener">Fabric API</a><br>
+                Installera rätt version för Minecraft.<br><br>
+
+                <b>Steg 2: Ladda ner Simple Voice Chat</b><br>
+                <a href="https://modrinth.com/mod/simple-voice-chat" target="_blank" rel="noopener">https://modrinth.com/mod/simple-voice-chat</a><br>
+                Ladda ner .jar som matchar Forge/Fabric + rätt Minecraft-version.<br><br>
+
+                <b>Steg 3: Lägg i mods-mappen</b><br>
+                1. Win + R → %appdata% → .minecraft<br>
+                2. Öppna eller skapa "mods"-mapp<br>
+                3. Lägg in .jar-filen (och Fabric API om du kör Fabric)<br><br>
+
+                <b>Steg 4: Starta Minecraft</b><br>
+                1. Välj Forge/Fabric-profil i launchern<br>
+                2. Starta spelet – ser du mikrofon-ikon? Klart!<br><br>
+
+                <b>Steg 5: Anslut till Seskis SMP</b><br>
+                1. Gå in på servern<br>
+                2. Tryck V → välj mic, ljud, volym<br>
+                3. Prata nära andra spelare<br><br>
+            </div>
+        </details>
+    </main>
+    <footer>
+        &copy; 2025 SeksisSMP. Ej officiellt associerad med Mojang.
+    </footer>
+</body>
+</html>
